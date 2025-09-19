@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { gsap } from 'gsap';
@@ -262,7 +264,7 @@ const PillNav: React.FC<PillNavProps> = ({
             ref={el => {
               logoRef.current = el;
             }}
-            className="rounded-full p-2 inline-flex items-center justify-center overflow-hidden"
+            className="rounded-full p-0 inline-flex items-center justify-center overflow-hidden"
             style={{
               width: 'var(--nav-h)',
               height: 'var(--nav-h)',
@@ -270,7 +272,7 @@ const PillNav: React.FC<PillNavProps> = ({
             }}
           >
             {logo ? (
-              <img src={logo} alt={logoAlt} ref={logoImgRef} className="w-full h-full object-cover block rounded-full" />
+              <img src={logo} alt={logoAlt} ref={logoImgRef} className="w-full h-full object-cover block rounded-full p-0" />
             ) : (
               <div ref={logoImgRef} className="text-white font-bold text-lg">
                 Portfolio
@@ -285,7 +287,7 @@ const PillNav: React.FC<PillNavProps> = ({
             ref={el => {
               logoRef.current = el;
             }}
-            className="rounded-full p-2 inline-flex items-center justify-center overflow-hidden"
+            className="rounded-full p-0 inline-flex items-center justify-center overflow-hidden"
             style={{
               width: 'var(--nav-h)',
               height: 'var(--nav-h)',
@@ -293,7 +295,7 @@ const PillNav: React.FC<PillNavProps> = ({
             }}
           >
             {logo ? (
-              <img src={logo} alt={logoAlt} ref={logoImgRef} className="w-full h-full object-cover block rounded-full" />
+              <img src={logo} alt={logoAlt} ref={logoImgRef} className="w-full h-full object-cover block rounded-full p-0" />
             ) : (
               <div ref={logoImgRef} className="text-white font-bold text-lg">
                 Portfolio
