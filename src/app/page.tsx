@@ -28,7 +28,7 @@ export default function Home() {
         />
       </div>
       
-      <div className="flex items-center justify-center min-h-[calc(100vh-200px)]">
+      <div className="flex items-center justify-center min-h-[calc(50vh-200px)]">
         <FuzzyText
           baseIntensity={0.30}
           hoverIntensity={hoverIntensity}

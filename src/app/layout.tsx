@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Particles from "../components/reactbits/Particles";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="relative min-h-screen w-full">
-          <div className="fixed inset-0 z-0">
+          <div className="fixed inset-0 z-0 pointer-events-none">
             <Particles
-              particleCount={600}
+              particleCount={1000}
               particleSpread={10}
-              speed={0.05}
+              speed={0.15}
               particleColors={['#ffffff', '#e0e0e0', '#c0c0c0']}
               moveParticlesOnHover={true}
               particleHoverFactor={0.5}
@@ -42,6 +43,7 @@ export default function RootLayout({
           
           <div className="relative z-10">
             {children}
+            <Footer />
           </div>
         </div>
       </body>
