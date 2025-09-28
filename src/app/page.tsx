@@ -1,6 +1,7 @@
 'use client'
 import FuzzyText from '../components/reactbits/FuzzyText';
 import PillNav from '../components/reactbits/PillNav';
+import KickStream from '../components/KickStream';
 
 export default function Home() {
   const hoverIntensity = 0.8;
@@ -36,6 +37,20 @@ export default function Home() {
         >
           Hello World
         </FuzzyText>
+      </div>
+      
+      {/* Kick Stream component*/}
+      <div className="container mx-auto px-4 py-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="w-full max-w-4xl mx-auto">
+            <KickStream 
+              channelName="#"
+              width="100%"
+              height="500px"
+              className="shadow-2xl rounded-lg overflow-hidden"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
